@@ -482,6 +482,20 @@
       text-align: center;
     }
 
+    .download-cover-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .download-cover {
+      max-width: 260px; /* adjust as you like */
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+      border: 1px solid rgba(180, 100, 20, 0.35);
+    }
+
     .download-text {
       font-size: 0.96rem;
       margin-bottom: 1rem;
@@ -741,6 +755,10 @@
 
       .memory-caption {
         max-width: 100%;
+      }
+
+      .download-cover {
+        max-width: 220px;
       }
     }
   </style>
@@ -1022,6 +1040,15 @@
       <h3>Download Diary</h3>
 
       <div class="download-section">
+        <div class="download-cover-wrapper">
+          <!-- Update the src to your actual cover image path -->
+          <img
+            src="image/Diarycover.jpg"
+            alt="Retirement diary cover"
+            class="download-cover"
+          />
+        </div>
+
         <p class="download-text">
           You can download the retirement diary with messages, memories and photos
           compiled for Shri K.V. Ramesh Reddy garu.
@@ -1178,4 +1205,3 @@
   </script>
 </body>
 </html>
-
